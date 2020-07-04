@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+//Components
 
+import Header from "./components/header" 
 const App =() => {
   return (
       <div class="newElement">
@@ -22,4 +24,8 @@ import ReactDOM from 'react-dom';
           }
 ReactDOM.render(</App>,doument.querySelector('#root'));
                 
-
+import React from 'react';
+const Header = () => {
+    return <div> This is my new Header </div>
+}
+export default Header ;
