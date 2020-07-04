@@ -1,7 +1,25 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-ReactDom.render(<App/>.document.getElemementById('root'));
-registerServiceWorker();
+import ReactDOM from 'react-dom';
+
+const App =() => {
+  return (
+      <div class="newElement">
+         <h1> Hello react !! </h1>
+         <div> hey </div>
+    </div>
+    )
+}
+ReactDOM.render(</App>,document.querySelector('#root'));
+                
+import react from 'react';
+import ReactDOM from 'react-dom';
+                const App = () => {
+        return (
+           <div className="newElement">
+             <h1>Hello react !!</h1>
+             <div> hey </div>
+        )
+          }
+ReactDOM.render(</App>,doument.querySelector('#root'));
+                
+
