@@ -1,15 +1,17 @@
-import React from "react";
-import ReactDOM from 'react-dom';
+import React{Component} from "react";
+import '../css/styles.css'
+function click () {
+   //
+class Header extends Component {
 //Component 
-
-import Header from './components/header'
-const App = () =>  {
-   return (
-      <div> 
-      Header 
-      </div>
-      )
-      
-      }
-ReactDOM.render(</App>,document.querySelector('#root'));
-
+   render() {
+  return  (
+     <header>
+      <div className="logo"
+     onClick= { ()=>{console.log("I was clicked ")}}
+     <input type="text"/>
+     </header>
+     )
+   }
+}
+   export default Header;
