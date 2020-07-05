@@ -1,5 +1,5 @@
 import React from 'react';
-const Header = {
+const User = {
   name:'Francis',
   lastName:'Jones',
   age:16
