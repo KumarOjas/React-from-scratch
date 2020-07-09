@@ -85,8 +85,50 @@ const App = ()  => {
   
   
   
+  import React from 'react';
+  import ReactDOM from 'react-dom';
+                   
+  //Component 
+   import Header from './components/header'
+                   const App =() => {
+                return (
+                <div>
+                  </Header>
+                 </div>
+                  
+                  )
+  }
+    
+  ReactDom.render(</App>,document.querySelector('#root'));
+                
+  import React from 'react';
+   const getYear = () => {
+      const newDate =new Date () ;
+       return  newDate.getFullYear ();
+  }
+  const Header = () =>
+  {
+    return <div> The date is {
+      getYear
+    }</div>
+  }
+  export default Header ;
   
   
+    
+    
+    
+    
+    
+                
+                  
+                
+                
+                
+                
+                
+                
+                )
   
   
   
