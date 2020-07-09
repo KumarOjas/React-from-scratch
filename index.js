@@ -121,14 +121,204 @@ const App = ()  => {
     
     
                 
+                  import React from 'react';
+                  const user = {
+                    name:'Francis',
+                    lastName:'Jones',
+                    age:16
+                  }
                   
-                
-                
-                
-                
-                
-                
-                )
+                  const Header = () => {
+                    return 
+                  (
+                     <div> 
+                       <div>{user.name} </div>
+                      <div>{user.lastname} </div>
+                      <div>{user.age} </div>  
+  
+                     </div>
+                    )
+                  }
+                  export default Header;
+  
+                  import React from 'react';
+                  const Header = ()  => {
+                    return (
+                      <header>
+                        <div>Logo </div>
+                       <input type="text" />
+                      </header> 
+                    )
+                  }
+              export default Header;
+    
+    
+             import React,{Component} from  'react';
+    
+             class header extends  Component {
+               render () {
+                 return  (
+                    <header>
+                     <div> Logo </div>
+                    <input type="text"/>
+                   </header>
+                   ) 
+               }
+             }
+     export default Header ;
+    
+      class Header extends Component  {
+          render () {
+             const styles = {
+                 header: {
+                    background:'#03a9f4'
+                 },
+               logo: {
+                color:#'#fff',
+                 fontFamily:'Anton',
+                 textAlign:'center' 
+               
+               }
+             }
+             
+       return  (
+           <header style= {styles.}>
+           <div> Logo </div>
+           <input type ="text"/>
+          </header>
+         ) }
+      }
+  
+  
+  
+     body {
+       margin:0
+     }
+     header {
+        background:'#03a9f4';
+       text-align:center
+     }
+     
+    .logo {
+      color :#fff;
+      font-size: 40px;
+      font-family: 'Anton'
+    }
+    header input {
+      font-size:20px;
+      margin:20px 0;
+    }
+    
+     class Header extends Component {
+       render ()
+       {
+         const styles = {
+           header: {
+              background: '#03a9f4'
+           },
+           logo:{
+             color:'#fff',
+             fontFamily:'Anton',
+             textAlign:'center' 
+           }
+         }
+         return (
+           <header style={styles.header}>
+            <div style={styles.logo}>Logo </div>
+           <input type="text"/>
+           </header>
+           )
+       }
+     }
+    
+           
+                //Index.html
+    
+   import React, {Component} from 'react';
+    import '../css/styles.css'
+    class Header extends Component {
+      inputChangedHandler(event){
+        console.log(event.target.value)
+        console.log('hey')
+      }
+        render() {
+        return (
+          <header>
+           <div>
+             className="logo"
+             onClick= { ()=>console.log('I was clicked ')}
+            >Logo </div>
+         <input type="text">
+           </header>
+    
+             )
+  }
+}
+  
+  export default Header ;   
+
+
+class Car {
+  constructor () {
+    this.wheels= 4;
+    this.type="hatchback"
+  }
+}
+
+class Ford extends Car {
+  constructor () {
+    super()
+    this.windows =4;
+  }
+
+}
+
+
+const car =new Car ();
+const ford =new Ford ();
+console.log(ford.wheels)
+
+import React, {Component } from 'react';
+import ReactDOM from 'react-dom';
+import JSON from './db.json';
+//COmponents 
+import Header from './components/headeer';
+import NewsList from './components/news_list ';
+class App extends Component {
+   state= {
+     news:Json
+   }
+render() {
+   news:JSON 
+}
+
+render () {
+  return {
+    <div>
+      </Header>
+      </NewsList>
+    </div>
+    
+    )
+  }
+
+import React,{Component} from 'react';
+  import '../css/styles.css'
+  class Header extends Component {
+    state= {
+      keywords:''
+    }
+  
+  inputChangeHandler = (event) => {
+    this.setState ({
+      keywords:event.target.value
+    });
+  }
+  render () {
+    return (
+      <header>
+        <div classname="logo">Logo</div>
+        <input type >
   
   
   
@@ -137,14 +327,43 @@ const App = ()  => {
   
   
   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
-                   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                    
                    
 
